@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project8</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+    <div class="header">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><%= link_to "About", "/about/history" %></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <%= yield %>
+  </body>
+</html>
