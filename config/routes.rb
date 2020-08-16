@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'location/map'
   root "welcome#index"
   get 'about/motto'
   get 'about/history'
